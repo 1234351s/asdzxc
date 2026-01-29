@@ -1,39 +1,36 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Правда или неправда</title>
-  <link rel="stylesheet" href="stylke.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Globalisierung Quiz</title>
+  <link rel="stylesheet" href="stylke.css" />
 </head>
-<header>
-    <h2 class="quiz">Quiz</h2>
-</header>
 <body>
+  
+  <main class="quiz-container" aria-labelledby="quiz-title">
+    <h1 id="quiz-title">Globalisierung Quiz</h1>
 
-  <main class="card">
-    <img src="./Screenshot_3.png" alt="asd" class="img">
-    <h1>Правда или неправда</h1>
-
-    <div id="questionText"></div>
-
-    <div class="options">
-      <label class="option">
-        <input type="radio" name="answer" value="true">
-        <span>Правда</span>
-      </label>
-
-      <label class="option">
-        <input type="radio" name="answer" value="false">
-        <span>Неправда</span>
-      </label>
+    <div class="progress-wrap" aria-hidden="false">
+      <div class="progress-info">
+        <span id="progress-text">0 / 4 beantwortet</span>
+        <span id="remaining-text">Verbleibend: 4</span>
+      </div>
+      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="progress-fill"></div>
+      </div>
     </div>
 
-    <button id="submitBtn">Ответить</button>
+    <form id="quiz" class="quiz" novalidate></form>
 
-    <div id="result" class="result"></div>
+    <div class="controls">
+      <button id="checkBtn" type="button" disabled>Antworten prüfen</button>
+      <button id="resetBtn" type="button" class="secondary">Zurücksetzen</button>
+    </div>
+
+    <div id="result" class="result" aria-live="polite"></div>
   </main>
 
-  <script src="javascript.js" defer></script>
+  <script src="javascript.js"></script>
 </body>
 </html>
