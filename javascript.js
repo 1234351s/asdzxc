@@ -69,6 +69,36 @@ const questions = [
       { text: "Europa schützen", correct: false },
       { text: "Banken kontrollieren", correct: false }
     ]
+  },
+         {
+    text: "Warum schließen Länder Bündnisse?",
+    options: [
+ 
+      { text: "Für militärische und wirtschaftliche Vorteile.", correct: true },
+     { text: "Um gemeinsame Feste zu feiern", correct: false },
+      { text: "Damit Politiker berühmter werden", correct: false },
+      { text: "Um mehr Touristen anzulocken", correct: false }
+    ]
+  },
+           {
+    text: "Warum haben die Vereinigten Staaten Venezuelas Präsident in Haft genommen?",
+    options: [
+      
+      { text: "Er wird beschuldigt, im Drogenhandel involviert zu sein.", correct: true },
+           { text: "Wegen eines Wahlkampfs", correct: false },
+      { text: "Wegen eines Streits mit Journalisten", correct: false },
+      { text: "Wegen Steuerproblemen", correct: false }
+    ]
+  },
+             {
+    text: "Was ist die meist ersehnte Ressource in der ganzen Welt?",
+    options: [
+   
+      { text: "Süßwasser.", correct: true },
+         { text: "Gold", correct: false },
+      { text: "Erdöl", correct: false },
+      { text: "Diamanten", correct: false }
+    ]
   }
 ];
 
@@ -92,6 +122,10 @@ function renderQuiz() {
     './frage-6.jpg',
     './frage-7.jpg',
 './frage-8.jpg',
+'./frage-9.jpg',
+'./frage-10.jpg',
+'./frage-11.webp'
+
   ];
 
   const imgSources = [
@@ -102,7 +136,10 @@ function renderQuiz() {
     'Inflation – Erklärung und Grafik <br>Abrufdatum: 01.02.2026<br> URL: https://share.google/images/5ZfKMxQKkIHJ5uLyz',
     'NATO und EU – Zusammenarbeit und Sicherheit<br>Abrufdatum: 01.02.2026<br>URL: https://share.google/images/j0ARliFRDFWWJeFly',
     'Inflation – Preisentwicklung und Wirtschaft<br>Abrufdatum: 01.02.2026<br>URL: https://share.google/images/TqTG2iB6WQdZ9GaCc',
-    'Vereinte Nationen (UNO) – Logo<br>Abrufdatum: 01.02.2026<br>URL: https://de.wikipedia.org/wiki/Vereinte_Nationen'
+    'Vereinte Nationen (UNO) – Logo<br>Abrufdatum: 01.02.2026<br>URL: https://de.wikipedia.org/wiki/Vereinte_Nationen',
+    'Darstellung einer Zusammenarbeit (Handshake-Symbol)<br>Abrufdatum: 04.02.2026<br>URL: https://share.google/images/dXPs3AI2H73yEF0I4',
+    'Darstellung der Beziehungen zwischen den USA und Venezuela (Donald Trump und Nicolás Maduro) <br>Abrufdatum: 04.02.2026 <br>URL: https://share.google/images/bSXweAC1PMavGBVji',
+    'Erhaltung der Weltressourcen (Pflanze in der Hand)<br>Abrufdatum: 04.02.2026<br>URL: https://share.google/images/wNMPNIYHoSIrsBcpV'
   ];
 
   questions.forEach((q, qi) => {
