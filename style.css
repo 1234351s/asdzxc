@@ -382,3 +382,15 @@ color:var(--text);
   z-index: 2000;
   border-radius: 8px; 
 }
+@media (max-width: 480px) {
+  #quizLogo {
+    height: 34px;   
+    top: 10px;
+    left: 12px;
+  }
+
+  #themeToggle {
+    top: 10px;
+    right: 12px;
+  }
+}
